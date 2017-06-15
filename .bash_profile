@@ -12,6 +12,9 @@ unset file;
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
+# Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups
+
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
 

@@ -1,8 +1,4 @@
 
-[user]
-	name = fabriciobrag
-	email = fabriciobedeschi@gmail.com
-
 [core]
 	#default editor
 	editor = vim
