@@ -49,3 +49,11 @@ fi;
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults;
+
+
+# restart services in docker-compose
+docker-compose-restart(){
+	docker-compose stop $@
+	docker-compose rm -f -v $@
+	docker-compose start --foce-recreate $@
+}
